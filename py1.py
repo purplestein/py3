@@ -1,9 +1,9 @@
-def my_dif():
+def my_dif(x, y):
     try:
-        numb_1 = int(input('Введите первое число:' ))
-        numb_2 = int(input('Введите второе число:' ))
-        res = numb_1 / numb_2   
+        res = x / y
         return res
     except ZeroDivisionError:
-        return 
-print(my_dif())
+        return
+
+
+print(my_dif(int(input('Введите х: ')), int(input('Введите y: '))))
